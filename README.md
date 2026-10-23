@@ -59,7 +59,7 @@ The global Explainable AI (XAI) and ML interpretability market is estimated at *
 
 ## 🛠️ Open-Source GitHub Projects
 
-Curated self-hosted toolkits, glassbox algorithms, and feature attribution libraries sorted descending by GitHub Stars_Count:
+Curated self-hosted toolkits, glassbox algorithms, and feature attribution libraries sorted descending by GitHub_Stars_Count:
 
 1. **[SHAP](https://github.com/slundberg/shap)** [![GitHub_Stars](https://img.shields.io/github/stars/slundberg/shap?style=social&color=white)](https://github.com/slundberg/shap/stargazers)  
    **The game-theoretic attribution standard.** Implements Shapley values from cooperative game theory to assign each feature a contribution to predictions—theoretically grounded, consistent, and model-agnostic (tree models, neural nets, linear models). Features tree SHAP accelerations for XGBoost, LightGBM, and CatBoost, alongside rich force plots, summary plots, and dependence plots.
@@ -139,3 +139,12 @@ If this curated ecosystem helps you understand, audit, or build explainable mach
 <p align="center">
   <b>Built for Data Scientists, MLOps Engineers, and Responsible AI Practitioners Worldwide.</b>
 </p>
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Machine-Learning-Explainability-XAI&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Machine-Learning-Explainability-XAI_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Machine-Learning-Explainability-XAI_growth.svg">
+  </picture>
+</a>
