@@ -59,42 +59,42 @@ The global Explainable AI (XAI) and ML interpretability market is estimated at *
 
 ## 🛠️ Open-Source GitHub Projects
 
-Curated self-hosted toolkits, glassbox algorithms, and feature attribution libraries sorted descending by GitHub star count:
+Curated self-hosted toolkits, glassbox algorithms, and feature attribution libraries sorted descending by GitHub Stars_Count:
 
-1. **[SHAP](https://github.com/slundberg/shap)** [![GitHub Stars](https://img.shields.io/github/stars/slundberg/shap?style=social&color=white)](https://github.com/slundberg/shap/stargazers)  
+1. **[SHAP](https://github.com/slundberg/shap)** [![GitHub_Stars](https://img.shields.io/github/stars/slundberg/shap?style=social&color=white)](https://github.com/slundberg/shap/stargazers)  
    **The game-theoretic attribution standard.** Implements Shapley values from cooperative game theory to assign each feature a contribution to predictions—theoretically grounded, consistent, and model-agnostic (tree models, neural nets, linear models). Features tree SHAP accelerations for XGBoost, LightGBM, and CatBoost, alongside rich force plots, summary plots, and dependence plots.
 
-2. **[LIME](https://github.com/marcotcr/lime)** [![GitHub Stars](https://img.shields.io/github/stars/marcotcr/lime?style=social&color=white)](https://github.com/marcotcr/lime/stargazers)  
+2. **[LIME](https://github.com/marcotcr/lime)** [![GitHub_Stars](https://img.shields.io/github/stars/marcotcr/lime?style=social&color=white)](https://github.com/marcotcr/lime/stargazers)  
    **The original local surrogate explanation framework.** Explains individual predictions of any black-box classifier or regressor by learning an interpretable local surrogate model (linear regression or decision tree) around perturbed instances. Ideal for quick qualitative sanity checks on tabular, NLP text, and image classifications.
 
-3. **[Cleanlab](https://github.com/cleanlab/cleanlab)** [![GitHub Stars](https://img.shields.io/github/stars/cleanlab/cleanlab?style=social&color=white)](https://github.com/cleanlab/cleanlab/stargazers)  
+3. **[Cleanlab](https://github.com/cleanlab/cleanlab)** [![GitHub_Stars](https://img.shields.io/github/stars/cleanlab/cleanlab?style=social&color=white)](https://github.com/cleanlab/cleanlab/stargazers)  
    **Data-centric AI and label interpretability.** Finds and fixes label errors, out-of-distribution instances, and data issues across tabular data, text, and computer vision datasets with confident learning algorithms. Essential for interpreting why models fail due to bad training annotations.
 
-4. **[InterpretML](https://github.com/interpretml/interpret)** [![GitHub Stars](https://img.shields.io/github/stars/interpretml/interpret?style=social&color=white)](https://github.com/interpretml/interpret/stargazers)  
+4. **[InterpretML](https://github.com/interpretml/interpret)** [![GitHub_Stars](https://img.shields.io/github/stars/interpretml/interpret?style=social&color=white)](https://github.com/interpretml/interpret/stargazers)  
    **Microsoft's unified glassbox and blackbox toolkit.** Features the **Explainable Boosting Machine (EBM)**—an inherently interpretable generalized additive model (GA2M) matching gradient boosting accuracy while exposing exact pairwise interactions. Also exposes a unified API covering SHAP, LIME, and partial dependence plots.
 
-5. **[Adversarial Robustness Toolbox (ART)](https://github.com/Trusted-AI/adversarial-robustness-toolbox)** [![GitHub Stars](https://img.shields.io/github/stars/Trusted-AI/adversarial-robustness-toolbox?style=social&color=white)](https://github.com/Trusted-AI/adversarial-robustness-toolbox/stargazers)  
+5. **[Adversarial Robustness Toolbox (ART)](https://github.com/Trusted-AI/adversarial-robustness-toolbox)** [![GitHub_Stars](https://img.shields.io/github/stars/Trusted-AI/adversarial-robustness-toolbox?style=social&color=white)](https://github.com/Trusted-AI/adversarial-robustness-toolbox/stargazers)  
    **Model robustness and adversarial interpretability library.** Developed under the Linux Foundation / IBM, ART provides tools to evaluate model vulnerability against evasion, extraction, and poisoning attacks, interpreting neural network decision boundaries under adversarial perturbation.
 
-6. **[Captum](https://github.com/pytorch/captum)** [![GitHub Stars](https://img.shields.io/github/stars/pytorch/captum?style=social&color=white)](https://github.com/pytorch/captum/stargazers)  
+6. **[Captum](https://github.com/pytorch/captum)** [![GitHub_Stars](https://img.shields.io/github/stars/pytorch/captum?style=social&color=white)](https://github.com/pytorch/captum/stargazers)  
    **PyTorch-native model interpretability library.** Created by Meta, Captum provides state-of-the-art attribution algorithms tailored specifically for PyTorch deep learning models, including Integrated Gradients, DeepLIFT, Grad-CAM, Saliency, Shapley Value Sampling, and Noise Tunneling.
 
-7. **[Shapash](https://github.com/MAIF/shapash)** [![GitHub Stars](https://img.shields.io/github/stars/MAIF/shapash?style=social&color=white)](https://github.com/MAIF/shapash/stargazers)  
+7. **[Shapash](https://github.com/MAIF/shapash)** [![GitHub_Stars](https://img.shields.io/github/stars/MAIF/shapash?style=social&color=white)](https://github.com/MAIF/shapash/stargazers)  
    **Interactive XAI dashboards for data scientists and business stakeholders.** Built by MAIF, Shapash wraps SHAP and Lime to generate clear, intuitive web applications and report summaries that bridge technical explainability outputs into clear business decision narratives.
 
-8. **[AI Fairness 360 (AIF360)](https://github.com/Trusted-AI/AIF360)** [![GitHub Stars](https://img.shields.io/github/stars/Trusted-AI/AIF360?style=social&color=white)](https://github.com/Trusted-AI/AIF360/stargazers)  
+8. **[AI Fairness 360 (AIF360)](https://github.com/Trusted-AI/AIF360)** [![GitHub_Stars](https://img.shields.io/github/stars/Trusted-AI/AIF360?style=social&color=white)](https://github.com/Trusted-AI/AIF360/stargazers)  
    **Comprehensive toolkit for algorithmic fairness and bias interpretation.** Maintained by IBM and the LF AI & Data Foundation, AIF360 implements over 70 fairness metrics and 10 bias mitigation algorithms across pre-processing, in-processing, and post-processing stages.
 
-9. **[ELI5](https://github.com/TeamHG-Memex/eli5)** [![GitHub Stars](https://img.shields.io/github/stars/TeamHG-Memex/eli5?style=social&color=white)](https://github.com/TeamHG-Memex/eli5/stargazers)  
+9. **[ELI5](https://github.com/TeamHG-Memex/eli5)** [![GitHub_Stars](https://img.shields.io/github/stars/TeamHG-Memex/eli5?style=social&color=white)](https://github.com/TeamHG-Memex/eli5/stargazers)  
    **Lightweight debugging and inspection library.** Python framework designed to "Explain Like I'm 5"—inspecting feature weights, scikit-learn pipelines, decision paths, XGBoost/LightGBM trees, and text highlighting for NLP models.
 
-10. **[Alibi Explain](https://github.com/SeldonIO/alibi)** [![GitHub Stars](https://img.shields.io/github/stars/SeldonIO/alibi?style=social&color=white)](https://github.com/SeldonIO/alibi/stargazers)  
+10. **[Alibi Explain](https://github.com/SeldonIO/alibi)** [![GitHub_Stars](https://img.shields.io/github/stars/SeldonIO/alibi?style=social&color=white)](https://github.com/SeldonIO/alibi/stargazers)  
     **Enterprise-grade black-box explanation and counterfactual toolkit.** Backed by Seldon, Alibi is renowned for high-performance counterfactual explanations ("what minimal change would alter this credit rejection?"), anchor explanations, integrated gradients, and ALE plots for TensorFlow and PyTorch.
 
-11. **[DALEX](https://github.com/ModelOriented/dalex)** [![GitHub Stars](https://img.shields.io/github/stars/ModelOriented/dalex?style=social&color=white)](https://github.com/ModelOriented/dalex/stargazers)  
+11. **[DALEX](https://github.com/ModelOriented/dalex)** [![GitHub_Stars](https://img.shields.io/github/stars/ModelOriented/dalex?style=social&color=white)](https://github.com/ModelOriented/dalex/stargazers)  
     **Model-agnostic language-independent explainability (Python & R).** Provides unified pipelines for model exploration, breakdown plots, partial dependence profiles, Ceteris Paribus curves, and automated model comparison across multiple frameworks.
 
-12. **[What-If Tool (WIT)](https://github.com/PAIR-code/what-if-tool)** [![GitHub Stars](https://img.shields.io/github/stars/PAIR-code/what-if-tool?style=social&color=white)](https://github.com/PAIR-code/what-if-tool/stargazers)  
+12. **[What-If Tool (WIT)](https://github.com/PAIR-code/what-if-tool)** [![GitHub_Stars](https://img.shields.io/github/stars/PAIR-code/what-if-tool?style=social&color=white)](https://github.com/PAIR-code/what-if-tool/stargazers)  
     **Google PAIR visual interactive model inspection.** Integrated directly into Jupyter notebooks and TensorBoard, allowing practitioners to explore model performance across subgroups, edit individual datapoints, and visualize counterfactual examples without code.
 
 ---
@@ -105,7 +105,7 @@ We welcome community contributions, tool additions, and documentation enhancemen
 
 1. 🍴 **Fork the repository** on GitHub.
 2. 🌿 **Create a new branch** (`git checkout -b feature/add-tool-name`).
-3. 📝 **Add or update entries** following the established markdown schema (include company size/valuation, pricing, and free tier limits for SaaS; star badges and official GitHub URLs for open source).
+3. 📝 **Add or update entries** following the established markdown schema (include company size/valuation, pricing, and free tier limits for SaaS; Stars_Badges and official GitHub URLs for open source).
 4. 🚀 **Commit your changes** (`git commit -m 'Add ToolName to XAI list'`).
 5. 📤 **Push to your branch** (`git push origin feature/add-tool-name`).
 6. 🎯 **Open a Pull Request** with a concise summary of your addition.
