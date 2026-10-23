@@ -30,37 +30,26 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global Explainable AI (XAI) and ML interpretability market is estimated at **$9.2B–$11.1B in 2025–2026**, growing at a CAGR of ~18–20% driven by enterprise regulatory compliance (such as the EU AI Act and financial fair-lending mandates). The sector is **moderately fragmented** overall: major cloud hyperscalers (AWS SageMaker Clarify, Azure ML, Google Vertex AI Explainable AI) hold a concentrated top tier, while independent platforms and open-source ecosystems compete dynamically through deep domain diagnostics, governance templates, and specialized attribution toolkits.
 
 ## SaaS/Hosted Platforms
 
-
-
-| Product | Description | Pricing | Free Tier Limit |
-
-| :--- | :--- | :--- | :--- |
-
-| **[Fiddler AI](https://www.fiddler.ai/)** | Model performance monitoring and explainable AI platform. Decouples monitoring, explainability, and fairness so you pay only for what you use. | Usage-based with annual commitment. Metrics: data ingested, number of models, number of explanations, and retention months. **Lite** and **Standard** plans available; contact sales for estimate . | No permanent free tier. **Trial available** via pricing estimate request. |
-
-| **[Arize AI](https://arize.com/)** | AI observability and LLM evaluation platform with explainability features for tabular and unstructured models. | **AX Free**: $0. **AX Pro**: paid tier with 50k spans/month included. **Enterprise**: custom with self-hosted deployment option . | **AX Free**: 1 GB storage, 15-day retention, 25k spans/month, unlimited users, unlimited evaluations . |
-
-| **[Arthur AI](https://www.arthur.ai/)** | AI governance and monitoring platform with built-in explainability, fairness, and "What-If" analysis. | **Free**: $0/mo. **Premium**: $60/mo. **Enterprise**: custom (VPC, SSO, SLAs) . | **Free plan**: 2 projects, 1 workspace, 300k spans/month, 12k inferences/month, 7-day retention, unlimited users, 3 custom alerts per model . |
-
-| **[WhyLabs](https://whylabs.ai/)** | AI observability platform. **Transitioned to fully open-source** (Apache 2.0) after acquisition; legacy SaaS pricing remains on AWS Marketplace. | **Open Source**: Free. Legacy SaaS: $100/mo for 2 models, $200/mo for 3 models, Enterprise ~$8,333/mo . | **Entire platform is now free and open-source**, including whylogs and langkit . |
-
-| **[H2O.ai](https://h2o.ai/)** | Enterprise AI platform with Driverless AI (AutoML) that includes built-in model explainability (variable importance, reason codes). | Enterprise-tier, quote-based. Driverless AI licensed per user or per deployment. | **Free API tier**: 2 requests/minute, 20/day, 500/month, ≤100k rows . Not a full XAI platform tier. |
-
-| **[DataRobot](https://www.datarobot.com/)** | Automated ML platform with prediction explanations and model interpretation built into deployments. | Classic MLOps (Pricing 5.0): contact sales. Active deployments based pricing . | No public free tier. Trial available via sales engagement. |
-
-
+| Product | Company Size (Valuation / Revenue) | Description | Pricing | Free Tier Limit |
+| :--- | :--- | :--- | :--- | :--- |
+| **[DataRobot](https://www.datarobot.com/)** | **$6.3B valuation** (~$250M ARR) | Automated ML and governance platform with native prediction explanations, feature impact, and model interpretation pipelines. | Starts at **$25,000/year** (custom annual subscriptions based on active user seats, compute AI units, and production deployments). | **30-day free trial** with full platform access (capped at shared modeling workers, ~1,000 LLM calls, and 15 vector DBs). |
+| **[H2O.ai](https://h2o.ai/)** | **$1.7B valuation** (~$75M ARR) | Enterprise AI platform featuring Driverless AI with automated machine learning interpretability (reason codes, surrogate models, Shapley values). | Starts at **$25,000/year** (single-node BYOL license; multi-node and H2O AI Cloud typically $75k–$100k+/year). | **21-day free trial** license key for Driverless AI (full feature access; self-hosted or BYOL on cloud infrastructure) + permanently free open-source H2O-3. |
+| **[Arize AI](https://arize.com/)** | **$915M valuation** (~$30M ARR; Acquired by Dynatrace) | AI observability and LLM evaluation platform with explainability workflows for tabular, computer vision, and unstructured models. | **AX Free**: $0/mo. Paid tier starts at **$50/month** (AX Pro, includes 50k spans/mo and 10 GB ingestion). Enterprise offers custom VPC deployment. | **Free forever plan**: 25k spans/month, 1 GB ingestion volume, 15-day data retention, unlimited users, Alyx AI assistant. |
+| **[Fiddler AI](https://www.fiddler.ai/)** | **~$200M valuation** (~$30M ARR; $30M Series C) | Model performance monitoring and explainable AI platform with unified metrics for data drift, game-theoretic attributions, and bias tracking. | Developer tier starts at **$0.002 per trace**; enterprise production monitoring plans start around **$1,500/month** ($18,000/year). | **Free plan** for real-time safety guardrails & evaluations; plus **30-day free trial** on AWS Marketplace (SageMaker Partner AI App) supporting up to 5 models. |
+| **[Arthur AI](https://www.arthur.ai/)** | **~$45M valuation** (~$5M ARR) | AI governance and monitoring platform with built-in model explainability, fairness audits, and counterfactual "What-If" scenario analysis. | **Free**: $0/mo. Paid tier starts at **$60/month** (Premium tier). Custom pricing for Enterprise VPC/SSO. | **Free forever plan**: 2 projects, 1 workspace, 300k spans/month, 12,000 model inferences/month, 7-day data retention, unlimited seats, 3 custom alerts/model. |
+| **[WhyLabs](https://whylabs.ai/)** | **~$37M valuation** (~$10M ARR; Acquired) | AI observability and model profiling platform utilizing statistical profiling (whylogs) to track data drift and feature distribution changes. | **Free & Open Source** (Platform open-sourced under Apache 2.0). Legacy SaaS on AWS Marketplace starts at **$100/month** (for 2 models; $200/mo for 3 models). | **Entire platform is 100% free forever and open-source** (self-hostable Apache 2.0 without tier limits or explanation caps). |
 
 ## Open-Source GitHub Projects
 
