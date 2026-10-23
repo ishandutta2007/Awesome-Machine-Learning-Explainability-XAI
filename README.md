@@ -1,46 +1,50 @@
 # Awesome-Machine-Learning-Explainability-XAI
 
-## Top Machine Learning Explainability (XAI) Ecosystem
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Machine Learning Explainability (XAI) Banner" width="100%">
+</p>
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Machine-Learning-Explainability-XAI/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Machine-Learning-Explainability-XAI?style=social&color=white" alt="Repo Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Machine-Learning-Explainability-XAI/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Machine-Learning-Explainability-XAI?style=social&color=white" alt="Repo Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Machine-Learning-Explainability-XAI/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Machine-Learning-Explainability-XAI" alt="Open Issues" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Machine-Learning-Explainability-XAI/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Machine-Learning-Explainability-XAI" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+---
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
+## 🔍 Top Machine Learning Explainability (XAI) Ecosystem
 
-*Focused on Model Interpretation, Feature Attribution & Self-Hosted Explainability Toolkits*  
+> **A curated, battle-tested list of leading SaaS observability platforms & open-source GitHub frameworks for Machine Learning Explainability (XAI), Model Interpretability, Feature Attribution, and AI Governance.**
 
-**Last updated: October 2026**
+**Last updated:** October 2026 🚀
 
+Machine Learning Explainability (XAI) empowers data science teams, ML engineers, compliance auditors, and enterprise executives to unpack "black-box" models. By understanding *why* models generate particular predictions, organizations can detect algorithmic bias, surface critical feature drivers, satisfy stringent regulatory standards (such as the **EU AI Act**, **GDPR Right to Explanation**, and **ECOA/Fair Lending** guidelines), and debug complex data drift issues before deploying to production.
 
+---
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Machine Learning Explainability (XAI)**. These tools help data scientists and stakeholders understand *why* a model made a specific prediction—surfacing feature importance, generating local explanations, and auditing models for fairness and compliance.
+## 📑 Table of Contents
 
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [🛠️ Open-Source GitHub Projects](#️-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [⭐ Star History](#-star-history)
+- [⚠️ Disclaimer](#️-disclaimer)
 
+---
 
-**Examples** include SHAP, LIME, InterpretML, Fiddler AI, Arize AI, Arthur AI, and WhyLabs (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, avoiding per-explanation SaaS fees, and controlling the interpretation layer. The open-source landscape is anchored by **SHAP** (the game-theoretic attribution standard), **LIME** (the original local surrogate method), and **InterpretML** (Microsoft's unified glassbox/blackbox toolkit), with **Captum** and **Alibi** serving PyTorch-native and TensorFlow-friendly needs respectively.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
 The global Explainable AI (XAI) and ML interpretability market is estimated at **$9.2B–$11.1B in 2025–2026**, growing at a CAGR of ~18–20% driven by enterprise regulatory compliance (such as the EU AI Act and financial fair-lending mandates). The sector is **moderately fragmented** overall: major cloud hyperscalers (AWS SageMaker Clarify, Azure ML, Google Vertex AI Explainable AI) hold a concentrated top tier, while independent platforms and open-source ecosystems compete dynamically through deep domain diagnostics, governance templates, and specialized attribution toolkits.
 
-## SaaS/Hosted Platforms
+---
+
+## ☁️ SaaS & Hosted Platforms
 
 | Product | Company Size (Valuation / Revenue) | Description | Pricing | Free Tier Limit |
 | :--- | :--- | :--- | :--- | :--- |
@@ -51,90 +55,87 @@ The global Explainable AI (XAI) and ML interpretability market is estimated at *
 | **[Arthur AI](https://www.arthur.ai/)** | **~$45M valuation** (~$5M ARR) | AI governance and monitoring platform with built-in model explainability, fairness audits, and counterfactual "What-If" scenario analysis. | **Free**: $0/mo. Paid tier starts at **$60/month** (Premium tier). Custom pricing for Enterprise VPC/SSO. | **Free forever plan**: 2 projects, 1 workspace, 300k spans/month, 12,000 model inferences/month, 7-day data retention, unlimited seats, 3 custom alerts/model. |
 | **[WhyLabs](https://whylabs.ai/)** | **~$37M valuation** (~$10M ARR; Acquired) | AI observability and model profiling platform utilizing statistical profiling (whylogs) to track data drift and feature distribution changes. | **Free & Open Source** (Platform open-sourced under Apache 2.0). Legacy SaaS on AWS Marketplace starts at **$100/month** (for 2 models; $200/mo for 3 models). | **Entire platform is 100% free forever and open-source** (self-hostable Apache 2.0 without tier limits or explanation caps). |
 
-## Open-Source GitHub Projects
+---
 
+## 🛠️ Open-Source GitHub Projects
 
+Curated self-hosted toolkits, glassbox algorithms, and feature attribution libraries sorted descending by GitHub star count:
 
-- **[SHAP](https://github.com/slundberg/shap)** [![GitHub Stars](https://img.shields.io/github/stars/slundberg/shap?style=social&color=white)](https://github.com/slundberg/shap/stargazers)  
+1. **[SHAP](https://github.com/slundberg/shap)** [![GitHub Stars](https://img.shields.io/github/stars/slundberg/shap?style=social&color=white)](https://github.com/slundberg/shap/stargazers)  
+   **The game-theoretic attribution standard.** Implements Shapley values from cooperative game theory to assign each feature a contribution to predictions—theoretically grounded, consistent, and model-agnostic (tree models, neural nets, linear models). Features tree SHAP accelerations for XGBoost, LightGBM, and CatBoost, alongside rich force plots, summary plots, and dependence plots.
 
-  **The game-theoretic attribution standard.** ~25.6k stars . Implements Shapley values from cooperative game theory to assign each feature a contribution to the prediction—theoretically grounded and consistent. **Model-agnostic** (works with tree models, neural networks, linear models) with optimized implementations for XGBoost/LightGBM. **Visualizations**: force plots, summary plots, dependence plots, waterfall charts. Best for teams wanting the most widely accepted, defensible feature attribution method with strong visualization support.
+2. **[LIME](https://github.com/marcotcr/lime)** [![GitHub Stars](https://img.shields.io/github/stars/marcotcr/lime?style=social&color=white)](https://github.com/marcotcr/lime/stargazers)  
+   **The original local surrogate explanation framework.** Explains individual predictions of any black-box classifier or regressor by learning an interpretable local surrogate model (linear regression or decision tree) around perturbed instances. Ideal for quick qualitative sanity checks on tabular, NLP text, and image classifications.
 
+3. **[Cleanlab](https://github.com/cleanlab/cleanlab)** [![GitHub Stars](https://img.shields.io/github/stars/cleanlab/cleanlab?style=social&color=white)](https://github.com/cleanlab/cleanlab/stargazers)  
+   **Data-centric AI and label interpretability.** Finds and fixes label errors, out-of-distribution instances, and data issues across tabular data, text, and computer vision datasets with confident learning algorithms. Essential for interpreting why models fail due to bad training annotations.
 
+4. **[InterpretML](https://github.com/interpretml/interpret)** [![GitHub Stars](https://img.shields.io/github/stars/interpretml/interpret?style=social&color=white)](https://github.com/interpretml/interpret/stargazers)  
+   **Microsoft's unified glassbox and blackbox toolkit.** Features the **Explainable Boosting Machine (EBM)**—an inherently interpretable generalized additive model (GA2M) matching gradient boosting accuracy while exposing exact pairwise interactions. Also exposes a unified API covering SHAP, LIME, and partial dependence plots.
 
-- **[LIME](https://github.com/marcotcr/lime)** [![GitHub Stars](https://img.shields.io/github/stars/marcotcr/lime?style=social&color=white)](https://github.com/marcotcr/lime/stargazers)  
+5. **[Adversarial Robustness Toolbox (ART)](https://github.com/Trusted-AI/adversarial-robustness-toolbox)** [![GitHub Stars](https://img.shields.io/github/stars/Trusted-AI/adversarial-robustness-toolbox?style=social&color=white)](https://github.com/Trusted-AI/adversarial-robustness-toolbox/stargazers)  
+   **Model robustness and adversarial interpretability library.** Developed under the Linux Foundation / IBM, ART provides tools to evaluate model vulnerability against evasion, extraction, and poisoning attacks, interpreting neural network decision boundaries under adversarial perturbation.
 
-  **The original local surrogate method.** ~11,979 stars . Explains individual predictions by fitting a simple interpretable model (linear regression, decision tree) to perturbations of the input around the prediction point. **Model-agnostic** and conceptually intuitive: "what local behavior approximates the black box here?" **Limitations**: sampling-based and can be unstable; explanations vary between runs. Best for quick, intuitive local explanations and as a complement to SHAP's global consistency.
+6. **[Captum](https://github.com/pytorch/captum)** [![GitHub Stars](https://img.shields.io/github/stars/pytorch/captum?style=social&color=white)](https://github.com/pytorch/captum/stargazers)  
+   **PyTorch-native model interpretability library.** Created by Meta, Captum provides state-of-the-art attribution algorithms tailored specifically for PyTorch deep learning models, including Integrated Gradients, DeepLIFT, Grad-CAM, Saliency, Shapley Value Sampling, and Noise Tunneling.
 
+7. **[Shapash](https://github.com/MAIF/shapash)** [![GitHub Stars](https://img.shields.io/github/stars/MAIF/shapash?style=social&color=white)](https://github.com/MAIF/shapash/stargazers)  
+   **Interactive XAI dashboards for data scientists and business stakeholders.** Built by MAIF, Shapash wraps SHAP and Lime to generate clear, intuitive web applications and report summaries that bridge technical explainability outputs into clear business decision narratives.
 
+8. **[AI Fairness 360 (AIF360)](https://github.com/Trusted-AI/AIF360)** [![GitHub Stars](https://img.shields.io/github/stars/Trusted-AI/AIF360?style=social&color=white)](https://github.com/Trusted-AI/AIF360/stargazers)  
+   **Comprehensive toolkit for algorithmic fairness and bias interpretation.** Maintained by IBM and the LF AI & Data Foundation, AIF360 implements over 70 fairness metrics and 10 bias mitigation algorithms across pre-processing, in-processing, and post-processing stages.
 
-- **[InterpretML](https://github.com/interpretml/interpret)** [![GitHub Stars](https://img.shields.io/github/stars/interpretml/interpret?style=social&color=white)](https://github.com/interpretml/interpret/stargazers)  
+9. **[ELI5](https://github.com/TeamHG-Memex/eli5)** [![GitHub Stars](https://img.shields.io/github/stars/TeamHG-Memex/eli5?style=social&color=white)](https://github.com/TeamHG-Memex/eli5/stargazers)  
+   **Lightweight debugging and inspection library.** Python framework designed to "Explain Like I'm 5"—inspecting feature weights, scikit-learn pipelines, decision paths, XGBoost/LightGBM trees, and text highlighting for NLP models.
 
-  **Microsoft's unified glassbox and blackbox toolkit.** Provides **Explainable Boosting Machine (EBM)**—a glassbox model that is competitive with gradient boosting while being fully interpretable—plus SHAP, LIME, and partial dependence plots in a single API. **Strengths**: one interface for both inherently interpretable models and post-hoc explanations. Best for teams wanting to choose between transparent models and blackbox explanations without leaving one library.
+10. **[Alibi Explain](https://github.com/SeldonIO/alibi)** [![GitHub Stars](https://img.shields.io/github/stars/SeldonIO/alibi?style=social&color=white)](https://github.com/SeldonIO/alibi/stargazers)  
+    **Enterprise-grade black-box explanation and counterfactual toolkit.** Backed by Seldon, Alibi is renowned for high-performance counterfactual explanations ("what minimal change would alter this credit rejection?"), anchor explanations, integrated gradients, and ALE plots for TensorFlow and PyTorch.
 
+11. **[DALEX](https://github.com/ModelOriented/dalex)** [![GitHub Stars](https://img.shields.io/github/stars/ModelOriented/dalex?style=social&color=white)](https://github.com/ModelOriented/dalex/stargazers)  
+    **Model-agnostic language-independent explainability (Python & R).** Provides unified pipelines for model exploration, breakdown plots, partial dependence profiles, Ceteris Paribus curves, and automated model comparison across multiple frameworks.
 
-
-- **[Captum](https://github.com/pytorch/captum)** [![GitHub Stars](https://img.shields.io/github/stars/pytorch/captum?style=social&color=white)](https://github.com/pytorch/captum/stargazers)  
-
-  **The PyTorch-native interpretation library.** Implements integrated gradients, saliency maps, GradCAM, DeepLIFT, and Shapley values specifically for PyTorch models. **Strengths**: tight integration with PyTorch tensors and autograd; optimized for deep learning workflows. Best for PyTorch practitioners needing gradient-based and perturbation-based explanations for neural networks.
-
-
-
-- **[Alibi](https://github.com/SeldonIO/alibi)** [![GitHub Stars](https://img.shields.io/github/stars/SeldonIO/alibi?style=social&color=white)](https://github.com/SeldonIO/alibi/stargazers)  
-
-  **The Seldon-backed explanation library.** Supports both TensorFlow and PyTorch, with anchor explanations, counterfactuals, integrated gradients, and kernel SHAP. **Strengths**: strong on counterfactual explanations ("what minimal change would flip the prediction?"). Best for teams needing counterfactual analysis alongside standard attribution methods.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **dalex** — R and Python library for model-agnostic exploration, with break-down plots, SHAP, and partial dependence. Best for R users and teams wanting a unified exploration workflow.
-
-- **eli5** — Older but still useful library for debugging ML classifiers and inspecting feature importances. Best for quick sanity checks on scikit-learn models.
-
-- **shapash** — Web-based dashboard for SHAP-based explanations, designed for business stakeholders. Best for teams wanting to share explanations without building a custom UI.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- **SHAP and LIME answer different questions**: SHAP provides consistent, game-theoretic attributions; LIME provides local approximations that are intuitive but can be unstable. Many teams use both—SHAP for rigorous analysis, LIME for quick stakeholder explanations.
-
-- **SaaS XAI pricing is opaque and usage-based**: Fiddler and DataRobot require sales engagement for quotes; Arize and Arthur offer transparent free tiers but scale with volume . Model your explanation volume before committing.
-
-- **WhyLabs is now fully open-source**: after acquisition, the platform (including whylogs) is free under Apache 2.0. The legacy SaaS tiers remain on marketplaces but are no longer the primary path .
-
-- **Explainability is not fairness**: SHAP tells you *why* a prediction happened, not whether the model is fair. Pair XAI with dedicated fairness auditing tools.
-
-
+12. **[What-If Tool (WIT)](https://github.com/PAIR-code/what-if-tool)** [![GitHub Stars](https://img.shields.io/github/stars/PAIR-code/what-if-tool?style=social&color=white)](https://github.com/PAIR-code/what-if-tool/stargazers)  
+    **Google PAIR visual interactive model inspection.** Integrated directly into Jupyter notebooks and TensorBoard, allowing practitioners to explore model performance across subgroups, edit individual datapoints, and visualize counterfactual examples without code.
 
 ---
 
+## 🤝 How to Contribute
 
+We welcome community contributions, tool additions, and documentation enhancements! 🌟
 
-**Made for data scientists, ML engineers, and organizations building transparent, accountable machine learning systems.**  
+1. 🍴 **Fork the repository** on GitHub.
+2. 🌿 **Create a new branch** (`git checkout -b feature/add-tool-name`).
+3. 📝 **Add or update entries** following the established markdown schema (include company size/valuation, pricing, and free tier limits for SaaS; star badges and official GitHub URLs for open source).
+4. 🚀 **Commit your changes** (`git commit -m 'Add ToolName to XAI list'`).
+5. 📤 **Push to your branch** (`git push origin feature/add-tool-name`).
+6. 🎯 **Open a Pull Request** with a concise summary of your addition.
 
-Let's make ML explainability more open, rigorous, and accessible.
+---
+
+## 💖 Support
+
+If this curated ecosystem helps you understand, audit, or build explainable machine learning systems:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork and share** with fellow data scientists and ML engineers.
+- ☕ **Sponsor & Buy a Coffee:** You can support continuous maintenance and curation via the [Sponsor Dashboard](https://github.com/sponsors/ishandutta2007). Thank you for your support!
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Machine-Learning-Explainability-XAI&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Machine-Learning-Explainability-XAI&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This is a **community-curated index** for informational and educational purposes; inclusion does not constitute a formal commercial endorsement.
+- **Explainability vs. Fairness:** Feature attribution tools (e.g., SHAP, LIME) explain *why* a model made an inference, not whether the decision is ethical or unbiased. Pair attribution toolkits with dedicated bias auditing frameworks like AIF360.
+- **SaaS Pricing & Quotas:** Vendor pricing tiers, compute units, and free trial allowances are subject to change. Always consult vendor portals for latest contractual rate cards.
+
+---
+
+<p align="center">
+  <b>Built for Data Scientists, MLOps Engineers, and Responsible AI Practitioners Worldwide.</b>
+</p>

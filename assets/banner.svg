@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Node Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .neural-line {
+      stroke-dasharray: 8 12;
+      animation: dashMove 20s linear infinite;
+    }
+    @keyframes dashMove {
+      from { stroke-dashoffset: 200; }
+      to { stroke-dashoffset: 0; }
+    }
+    .pulse-node {
+      animation: pulse 3s ease-in-out infinite alternate;
+    }
+    @keyframes pulse {
+      0% { r: 5px; opacity: 0.4; }
+      100% { r: 9px; opacity: 0.9; }
+    }
+    .floating-pill {
+      animation: float 6s ease-in-out infinite alternate;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-10px); }
+    }
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      fill: #94a3b8;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #e2e8f0;
+    }
+  </style>
+
+  <!-- Deep Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Subtle Grid lines -->
+  <g opacity="0.12" stroke="#38bdf8" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="360" />
+    <line x1="300" y1="0" x2="300" y2="360" />
+    <line x1="450" y1="0" x2="450" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="750" y1="0" x2="750" y2="360" />
+    <line x1="900" y1="0" x2="900" y2="360" />
+    <line x1="1050" y1="0" x2="1050" y2="360" />
+  </g>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="200" cy="80" r="120" fill="#38bdf8" opacity="0.08" filter="url(#glow)" />
+  <circle cx="1000" cy="280" r="150" fill="#a855f7" opacity="0.09" filter="url(#glow)" />
+
+  <!-- Animated Neural/Interpretability Flow Layer (Background Network) -->
+  <g opacity="0.35">
+    <!-- Connecting flow paths -->
+    <path d="M 80,180 Q 250,50 420,160 T 780,140 T 1120,200" fill="none" stroke="#38bdf8" stroke-width="2" class="neural-line" />
+    <path d="M 100,280 Q 320,340 550,220 T 920,260 T 1150,110" fill="none" stroke="#818cf8" stroke-width="2" class="neural-line" />
+    <path d="M 50,80 Q 280,240 600,100 T 1050,180" fill="none" stroke="#c084fc" stroke-width="1.5" class="neural-line" />
+  </g>
+
+  <!-- Pulsing Nodes (Background feature attribution points) -->
+  <g>
+    <circle cx="120" cy="180" fill="#38bdf8" class="pulse-node" filter="url(#subtleGlow)" />
+    <circle cx="280" cy="100" fill="#818cf8" class="pulse-node" style="animation-delay: -1s;" filter="url(#subtleGlow)" />
+    <circle cx="420" cy="160" fill="#c084fc" class="pulse-node" style="animation-delay: -2s;" filter="url(#subtleGlow)" />
+    <circle cx="780" cy="140" fill="#38bdf8" class="pulse-node" style="animation-delay: -0.5s;" filter="url(#subtleGlow)" />
+    <circle cx="950" cy="250" fill="#818cf8" class="pulse-node" style="animation-delay: -1.5s;" filter="url(#subtleGlow)" />
+    <circle cx="1080" cy="120" fill="#c084fc" class="pulse-node" style="animation-delay: -2.5s;" filter="url(#subtleGlow)" />
+  </g>
+
+  <!-- Side Floating Pill Tags (Kept strictly on peripheral sides to protect title & subtitle clarity) -->
+  <g class="floating-pill" opacity="0.85">
+    <!-- Left Feature Tag -->
+    <rect x="50" y="45" width="125" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" />
+    <circle cx="66" cy="60" r="4" fill="#38bdf8" />
+    <text x="80" y="65" class="badge-text">SHAP / LIME</text>
+  </g>
+
+  <g class="floating-pill" style="animation-delay: -3s;" opacity="0.85">
+    <!-- Right Feature Tag -->
+    <rect x="1015" y="45" width="135" height="30" rx="15" fill="#1e293b" stroke="#a855f7" stroke-width="1.2" />
+    <circle cx="1031" cy="60" r="4" fill="#c084fc" />
+    <text x="1045" y="65" class="badge-text">Glassbox AI</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header, Badge, Title, Subtitle, Highlights -->
+  <!-- Top Pill Badge -->
+  <g transform="translate(600, 68)">
+    <rect x="-140" y="-18" width="280" height="34" rx="17" fill="#1e293b" stroke="url(#accentGrad)" stroke-width="1.5" />
+    <text x="0" y="4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="12" fill="#38bdf8" letter-spacing="1.5">
+      CURATED ECOSYSTEM 2026
+    </text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="600" y="145" text-anchor="middle" class="title-text" font-size="44">
+    Awesome Machine Learning Explainability (XAI)
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="190" text-anchor="middle" class="subtitle-text" font-size="20">
+    Top SaaS Observability Platforms • Self-Hosted Open-Source Toolkits • Model Interpretability
+  </text>
+
+  <!-- Foreground Feature Highlights Pill Bar -->
+  <g transform="translate(600, 245)">
+    <!-- Pill 1 -->
+    <rect x="-370" y="0" width="170" height="38" rx="19" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    <circle cx="-350" cy="19" r="5" fill="#38bdf8" />
+    <text x="-275" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13" fill="#cbd5e1">Feature Attribution</text>
+
+    <!-- Pill 2 -->
+    <rect x="-180" y="0" width="170" height="38" rx="19" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    <circle cx="-160" cy="19" r="5" fill="#818cf8" />
+    <text x="-85" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13" fill="#cbd5e1">Model Governance</text>
+
+    <!-- Pill 3 -->
+    <rect x="10" y="0" width="170" height="38" rx="19" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    <circle cx="30" cy="19" r="5" fill="#c084fc" />
+    <text x="105" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13" fill="#cbd5e1">Fairness &amp; Auditing</text>
+
+    <!-- Pill 4 -->
+    <rect x="200" y="0" width="170" height="38" rx="19" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    <circle cx="220" cy="19" r="5" fill="#34d399" />
+    <text x="295" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13" fill="#cbd5e1">EU AI Act Ready</text>
+  </g>
+
+  <!-- Bottom Accent Border Strip -->
+  <rect x="0" y="354" width="1200" height="6" rx="3" fill="url(#accentGrad)" />
+</svg>
